@@ -2,6 +2,8 @@
 
 **NeoSwing** is a lightweight Java library built on **Swing** that provides modern, customizable GUI components. It makes creating windows, buttons, and panels easier with a simple and fluent API.
 
+For more infos see [ROADMAP.md](https://github.com/angle-droit/NeoSwing/blob/master/ROADMAP.md)
+
 ---
 
 ## Features
@@ -38,7 +40,8 @@ public class Demo {
         SwingUtilities.invokeLater(() -> {
             NeoWindow window = new NeoWindow("NeoSwing Demo", 400, 300);
 
-            NeoButton button = new NeoButton("Click Me", 150, 50);
+            NeoButton btn = new NeoButton("click", 100, 50);
+		    btn.setAction(e -> System.out.println("test"));
 
             window.setLayout(new FlowLayout());
             window.add(button);
