@@ -9,6 +9,7 @@ public class NeoWindow extends JFrame {
 	
 	public NeoWindow(String windowName, int width, int height) {
 		super(windowName);
+		pack();
 		setPreferredSize(new Dimension(width, height));
 	}
 }
