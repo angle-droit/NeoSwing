@@ -15,6 +15,7 @@ public class NeoButton extends JButton {
 		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));	
 	}
 	
+	@SuppressWarnings("exports")
 	public void setAction(ActionListener action) {
 		for (ActionListener al : getActionListeners()) {
 			removeActionListener(al);
