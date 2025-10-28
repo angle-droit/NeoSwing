@@ -38,7 +38,8 @@ public class Demo {
         SwingUtilities.invokeLater(() -> {
             NeoWindow window = new NeoWindow("NeoSwing Demo", 400, 300);
 
-            NeoButton button = new NeoButton("Click Me", 150, 50);
+            NeoButton btn = new NeoButton("click", 100, 50);
+		    btn.setAction(e -> System.out.println("test"));
 
             window.setLayout(new FlowLayout());
             window.add(button);
