@@ -3,6 +3,7 @@ package com.alex.neoswing.component;
 import javax.swing.*;
 
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 @SuppressWarnings("serial")
 public class NeoButton extends JButton {
@@ -11,7 +12,13 @@ public class NeoButton extends JButton {
 		super(text);
 		setPreferredSize(new Dimension(width, height));
 		setFont(new Font("Segoe UI", Font.BOLD, 14));
-		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		
+		setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));	
+	}
+	
+	public void setAction(ActionListener action) {
+		for (ActionListener al : getActionListeners()) {
+			removeActionListener(al);
+		}
+		addActionListener(action);
 	}
 }
