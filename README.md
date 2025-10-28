@@ -2,6 +2,8 @@
 
 **NeoSwing** is a lightweight Java library built on **Swing** that provides modern, customizable GUI components. It makes creating windows, buttons, and panels easier with a simple and fluent API.
 
+For more infos see [ROADMAP.md](https://github.com/angle-droit/NeoSwing/blob/master/ROADMAP.md)
+
 ---
 
 ## Features
