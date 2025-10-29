@@ -10,5 +10,8 @@ public class NeoCard  extends JPanel {
 	public NeoCard(String cardTitle, int width, int height) {
 		super();
 		setPreferredSize(new Dimension(width, height));
+		
 	}
+	
+	
 }

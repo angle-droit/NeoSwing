@@ -29,30 +29,25 @@ public class NeoButton extends JButton {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				
-				
 			}
 			
 			@Override
 			public void mousePressed(MouseEvent e) {
-				// TODO Auto-generated method stub
-				
+
 			}
 			
 			@Override
 			public void mouseExited(MouseEvent e) {
 				setBackground(new Color(255, 60, 0));
-				
 			}
 			
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				setBackground(new Color(255, 87, 36));
-				
 			}
 			
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				// TODO Auto-generated method stub
 				
 			}
 		});
